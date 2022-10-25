@@ -132,11 +132,11 @@ void mainMenu() //menu function
       case('7'):
       {
           cout << "Enter the letter you want to filter the list with:";
-          string L;
+          string S;
           cin.ignore();
-          cin >> L;
-          list.FilterByLetters(list.head, L);
-          cout << "The list if filtered!";
+          cin >> S;
+          list.FilterByLetters(list.head, S);
+          cout << "The list is filtered!";
           writeToFile(list.head);
       }break;
       case('s'):
