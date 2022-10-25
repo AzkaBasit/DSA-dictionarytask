@@ -25,15 +25,7 @@ class SinglyLinkedList
     {
         return (head==NULL);
     }
-
-    //length of list
-    int length()
-    {
-        int len=0;
-        for(ListNode<Dictionary>* loc = head; loc; loc=loc->next)
-        {  len++  ;}
-        return len;
-    }
+    
     
     //insertion at start
     void InsertAtStart(A val)
@@ -124,6 +116,14 @@ class SinglyLinkedList
         } 
         head=NULL; 
     }
+  
+    int length()
+      {
+          int len=0;
+          for(ListNode<Dictionary>* loc = head; loc; loc=loc->next)
+          {  len++  ;}
+          return len;
+      }
     
     void print_List()
     {
